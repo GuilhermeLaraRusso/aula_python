@@ -1,9 +1,6 @@
-a = 10
-b = 10
-c = 10
-if a > b or a >= c:
-    print('Primeiro afirmação é verdadeira')
-elif a == b:
-    print('Segunda afirmação é verdadeira')
-else:
-    print('Nenhuma afirmação é verdadeira')
+valida_numero = {
+    'par': lambda a: True if a % 2 == 0 else False,
+    'impar': lambda b: True if b % 2 == 0 else False
+}
+resultado = valida_numero['par'](10)
+print(resultado)
